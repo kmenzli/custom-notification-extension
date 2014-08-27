@@ -32,4 +32,34 @@
   <name>Custom Notification Configuration</name>
   <packaging>jar</packaging>
   <description>Custom Notification Configuration</description>
+    <dependencies>
+
+        <!-- These dependency is required to compile but reported as useless by mvn dependency:analyze -->
+        <dependency>
+            <groupId>org.exoplatform.social</groupId>
+            <artifactId>social-component-common</artifactId>
+            <version>${product.version}</version>
+        </dependency>
+        <!-- These dependency is required to compile but reported as useless by mvn dependency:analyze -->
+        <dependency>
+            <groupId>org.exoplatform.social</groupId>
+            <artifactId>social-component-core</artifactId>
+            <version>${product.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.social</groupId>
+            <artifactId>social-component-notification</artifactId>
+            <version>${product.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.commons</groupId>
+            <artifactId>commons-api</artifactId>
+            <version>${product.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.commons</groupId>
+            <artifactId>commons-component-common</artifactId>
+            <version>${product.version}</version>
+        </dependency>
+    </dependencies>
 </project>
